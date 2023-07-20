@@ -4,7 +4,7 @@ import './Expenses.css';
 import Card from '../UI/Card';
 // const Card = lazy(()=> import('../UI/Card'))
 
-function Expenses(props) {
+const Expenses = (props) => {
     console.log("ptps here",props)
   return (
     // <Suspense fallback={<>Loafing...</>}>
