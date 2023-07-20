@@ -1,10 +1,13 @@
+// import { lazy, Suspense } from 'react';
 import ExpenseItem from './ExpenseItem';
-import Card from './Card'
 import './Expenses.css';
+import Card from '../UI/Card';
+// const Card = lazy(()=> import('../UI/Card'))
 
 function Expenses(props) {
     console.log("ptps here",props)
   return (
+    // <Suspense fallback={<>Loafing...</>}>
     <Card className="expenses">
       <ExpenseItem
         title={props.items[0].title}
@@ -27,6 +30,7 @@ function Expenses(props) {
         date={props.items[3].date}
       />
     </Card>
+    // </Suspense>
   );
 }
 
